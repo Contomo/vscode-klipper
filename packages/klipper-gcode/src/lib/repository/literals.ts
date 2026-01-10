@@ -7,7 +7,7 @@ export const boolLiteral: TMGrammarScope = {
 
 export const stringLiteral: TMGrammarScope = {
 	name: "string.klipper-gcode",
-	begin: /"/,
+	begin: /(?<!\\)(")/,
 	beginCaptures: {
 		0: { name: "punctuation.definition.string.begin.klipper-gcode" },
 	},
