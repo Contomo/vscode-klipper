@@ -3,6 +3,10 @@ import { TMGrammarScope } from "@vscode-devkit/grammar";
 export const keyword: TMGrammarScope = {
 	patterns: [
 		{
+		name: "keyword.control.definition.$1.klipper-script",
+		match: /\b(macro|endmacro)\b/,
+		},
+		{
 			name: "keyword.control.iteration.$1.klipper-script",
 			match: /\b(for|in|endfor)\b/,
 		},
